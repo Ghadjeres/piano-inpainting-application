@@ -1,1 +1,14 @@
 theme: jekyll-theme-cayman
+title: 'The Piano Inpainting Application'
+description: "An A.I.-enhanced piano performance generation Ableton plugin"
+
+# Default categories (in order) to appear in the navigation
+# sections: [
+#     ['doc', 'Documentation'],
+#     ['tut', 'Tutorial'],
+#     ['ref', 'Reference'],
+#     ['dev', 'Developers'],
+#     ['post', 'Posts']
+# ]
+show_downloads: "true"
+#google_analytics: Google analytics ID
