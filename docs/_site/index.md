@@ -51,4 +51,4 @@ Expect some issues. Please save your important work before experimenting with PI
 
 > [Gaëtan Hadjeres](https://scholar.google.com/citations?user=wfZF3E0AAAAJ&hl=en), Feb. 2021.
 >
-> Many thanks to [Adrien Laversanne-Finot](https://scholar.google.com/citations?user=kWScejIAAAAJ&hl=fr) for his important contributions in this project.
+> Many thanks to [Adrien Laversanne-Finot](https://scholar.google.com/citations?user=kWScejIAAAAJ&hl=fr) for his important contributions to this project.
