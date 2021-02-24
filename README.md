@@ -2,18 +2,17 @@
 The Piano Inpainting Application (PIA) is an A.I.-based [Ableton Live](https://www.ableton.com/en/live/) plugin allowing to generate piano performances in an interactive way.
 
 <p align="center">
-<img src="resources/pia.png" alt="drawing" width="150"/>
+<img src="docs/resources/pia_generation.gif" width="700"/>
 </p>
 
 A more detailed presentation is available on the [accompanying website](https://ghadjeres.github.io/piano-inpainting-application/).
 
 
 ### How to use
-You can download the  plugin [here](TODO) and simply drag and drop the `PIA.amxd` file within Ableton Live's  MIDI plugin section. 
-
+You can download the  plugin [here](https://github.com/Ghadjeres/piano-inpainting-application/releases/download/v0.1-alpha/PIA.amxd) and simply drag and drop the `PIA.amxd` file within Ableton Live's  MIDI plugin section. 
 
 <p align="center">
-<img src="resources/pia.png" alt="drawing" width="150"/>
+<img src="docs/resources/pia.png" alt="drawing" width="150"/>
 </p>
 
 Select a region in the MIDI track you wish to edit by specifying it using the loop selector (CMD + L) and click on PIA's *Generate* button. The *density* knob controls how many notes per second the inpainted region should have. The last button is used to set the *density* knob to the actual note density of the selected region.
