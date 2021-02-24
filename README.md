@@ -29,7 +29,7 @@ Here are some insights about the inner-workings of PIA:
 - If the MIDI performance disappears and reappears instantly without any change, this means that you are experiencing connectivity issues.
 - Please check that the loop brace is *active* when you click on *Generate*.
 - If there is no note after the region that you selected, PIA will always consider that the piece should end at the end of the loop brace.
-- Even if there are notes after the region you selected, these will be removed while PIA is generating. Don't worry, these will be added back when the generation completes.
+- Even if there are notes after the region you selected, these will be removed while PIA is generating. Don't worry, these will be added back when the generation completes. Note that the offsets of these notes can be changed.
 - We did not add the possibility to map the *Generate* button on a MIDI controller since this clutters the Ableton Live undo history.
 - PIA only works in Session view.
 - There is no way to condition PIA on a particular musical style other than providing a musical context.
