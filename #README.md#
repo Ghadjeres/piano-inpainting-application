@@ -8,7 +8,6 @@ The Piano Inpainting Application (PIA) is an A.I.-based [Ableton Live](https://w
 A more detailed presentation is available on the [accompanying website](https://ghadjeres.github.io/piano-inpainting-application/).
 
 
-
 ### How to use
 You can download the  plugin [here](TODO) and simply drag and drop the `PIA.amxd` file within Ableton Live's  MIDI plugin section. 
 
@@ -42,7 +41,6 @@ Any feedback is more than welcome! From explaining how you worked with PIA, shar
 
 ### Further developments
 - This plugin is currently only available for Ableton Live users but please note that a 90-day free trial version of Ableton Live is available.
-
 
 
 ### Disclaimer

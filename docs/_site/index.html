@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Welcome to GitHub Pages | The Piano Inpainting Application</title>
+<title>The Piano Inpainting Application | An A.I.-enhanced piano performance generation Ableton plugin</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Welcome to GitHub Pages" />
+<meta property="og:title" content="The Piano Inpainting Application" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An A.I.-enhanced piano performance generation Ableton plugin" />
 <meta property="og:description" content="An A.I.-enhanced piano performance generation Ableton plugin" />
@@ -16,7 +16,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="The Piano Inpainting Application" />
 <script type="application/ld+json">
-{"@type":"WebSite","name":"The Piano Inpainting Application","headline":"Welcome to GitHub Pages","url":"http://localhost:4000/","description":"An A.I.-enhanced piano performance generation Ableton plugin","@context":"https://schema.org"}</script>
+{"@type":"WebSite","url":"http://localhost:4000/","name":"The Piano Inpainting Application","headline":"The Piano Inpainting Application","description":"An A.I.-enhanced piano performance generation Ableton plugin","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,59 +24,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=77cbf487bd53f7a6765bcba3bef5b3b1ace2ffc7">
+    <link rel="stylesheet" href="/assets/css/style.css?v=8c9b27bca93f39d389c7297b598944322a5ebcfc">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">Welcome to GitHub Pages</h1>
+      <h1 class="project-name">The Piano Inpainting Application</h1>
       <h2 class="project-tagline">An A.I.-enhanced piano performance generation Ableton plugin</h2>
       
         <a href="https://github.com/Ghadjeres/piano-inpainting-application" class="btn">View on GitHub</a>
       
-      
-        <a href="https://github.com/Ghadjeres/piano-inpainting-application/tarball/gh-pages" class="btn">Download .tar.gz</a>
+	
+	<a href="https://github.com/Ghadjeres/piano-inpainting-application/releases/download/v0.1-alpha/PIA.amxd" class="btn">Download .amxd</a>
       
     </header>
 
     <main id="content" class="main-content" role="main">
-      <h2 id="welcome-to-github-pages">Welcome to GitHub Pages</h2>
+      <p><!--## The Piano Inpainting Application  --></p>
+<div class="youtube-wrapper">
+  <iframe src="https://www.youtube.com/embed/HSn2NGAR-ro" allowfullscreen=""></iframe>
+</div>
 
-<p>You can use the <a href="https://github.com/Ghadjeres/piano-inpainting-application/edit/main/docs/index.md">editor on GitHub</a> to maintain and preview the content for your website in Markdown files.</p>
+<h3 id="ai-as-creative-music-assistants">A.I. as creative music assistants</h3>
+<p>Composing and editing piano performances using a <a href="https://en.wikipedia.org/wiki/Digital_audio_workstation">Digital Audio Workstation</a> (DAW) can often become a lengthy task as the proper timing, duration and velocity of each note must be set precisely in order to convey the intended emotional effect. If one does not have access to a MIDI keyboard, this task might even become impossible to handle.</p>
 
-<p>Whenever you commit to this repository, GitHub Pages will run <a href="https://jekyllrb.com/">Jekyll</a> to rebuild the pages in your site, from the content in your Markdown files.</p>
+<p>In this project, we propose to rely on an Artificial Intelligence to interactively compose piano performances through a constant dialogue with a human user. 
+To this end, we chose to train our A.I. on a single specific task that we called <em>piano inpainting task</em>. Similar to its <a href="https://en.wikipedia.org/wiki/Inpainting">counterpart</a> in image edition, the piano inpainting task consists in restoring a piano performance where some parts have been occluded by filling in the missing parts. After being trained on a large dataset of piano performances, this A.I. is able to generate convincing and always-renewed proposals in a wide variety of styles.</p>
 
-<h3 id="markdown">Markdown</h3>
+<p>With access to such an A.I.-assistant, a user can ask the model to generate any region of a MIDI piano performance with little effort. This comprises connecting two parts together, creating a new piece from scratch or even continuing a first sketch recorded on a MIDI keyboard. The user now acts as an artistic director, validating or invalidating the proposals made by the A.I. We hope that this novel approach to music composition will be entertaining and that it will make piano composition accessible to non-professional musicians.</p>
 
-<p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
+<p align="center">
+<img src="resources/pia_generation.gif" alt="drawing" width="600" />
+</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Syntax highlighted code block
+<h3 id="the-piano-inpainting-application">The Piano Inpainting Application</h3>
+<p>It was important for us to make this tool usable within DAWs, so that it can be easily integrated within the users workflows while benefiting from all the capabilities offered by modern software for music production. 
+The Piano Inpainting Application (PIA) comes as a lightweight <a href="https://www.ableton.com/en/live/">Ableton Live</a> plugin with the following three-button interface.</p>
 
-<span class="gh"># Header 1</span>
-<span class="gu">## Header 2</span>
-<span class="gu">### Header 3</span>
-<span class="p">
--</span> Bulleted
-<span class="p">-</span> List
-<span class="p">
-1.</span> Numbered
-<span class="p">2.</span> List
+<p align="center">
+<img src="resources/pia.png" alt="drawing" width="150" />
+</p>
 
-<span class="gs">**Bold**</span> and _Italic_ and <span class="sb">`Code`</span> text
+<h3 id="how-to-use">How to use</h3>
+<p>You can download PIA using the <a href="https://github.com/Ghadjeres/piano-inpainting-application/releases/download/v0.1-alpha/PIA.amxd">Download .amxd</a> link above and simply drag and drop the <code class="language-plaintext highlighter-rouge">PIA.amxd</code> file within Ableton Live’s  MIDI plugin section.</p>
 
-<span class="p">[</span><span class="nv">Link</span><span class="p">](</span><span class="sx">url</span><span class="p">)</span> and !<span class="p">[</span><span class="nv">Image</span><span class="p">](</span><span class="sx">src</span><span class="p">)</span>
-</code></pre></div></div>
+<p>Select a region in the MIDI track you wish to edit by specifying it using the loop selector (CMD + L) and click on PIA’s <em>Generate</em> button. The <em>density</em> knob controls how many notes per second the inpainted region should have. The last button is used to set the <em>density</em> knob to the actual note density of the selected region.</p>
 
-<p>For more details see <a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown</a>.</p>
+<p>Since PIA is fast and responsive, you should immediately see the selected region erased and new notes appearing. You can even listen to the music while it is being generated!</p>
 
-<h3 id="jekyll-themes">Jekyll Themes</h3>
+<p>Note that you must be connected to the Internet so that PIA can work.</p>
 
-<p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Ghadjeres/piano-inpainting-application/settings">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
+<h3 id="example">Example</h3>
+<p>In the following video, I show a live recording of an example usage of PIA. Starting from scratch, I successively ask for a continuation of the first proposal, then edit the middle section twice with different note densities before asking for another ending.</p>
 
-<h3 id="support-or-contact">Support or Contact</h3>
+<div class="youtube-wrapper">
+  <iframe src="https://www.youtube.com/embed/YKCzU8UYsRU" allowfullscreen=""></iframe>
+</div>
 
-<p>Having trouble with Pages? Check out our <a href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://support.github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<h3 id="what-kind-of-ai-model-is-this">What kind of A.I. model is this?</h3>
+<p>We are currently writing a scientific paper on the model itself. Our main focus was to make the model as responsive as possible while maintaining high generation capabilities. The code and the model will be released.</p>
+
+<h3 id="how-to-contribute">How to contribute?</h3>
+<p>Any feedback is more than welcome! From explaining how you worked with PIA, sharing your creations to proposing improvement suggestions. Please visit the dedicated <a href="https://github.com/Ghadjeres/piano-inpainting-application/discussions">Github Discussions</a>.</p>
+
+<h3 id="disclaimer">Disclaimer</h3>
+<p>This is an alpha version. This is a research project, not an official product. 
+Expect some issues. Please save your important work before experimenting with PIA. No personnal data will be collected.</p>
+
+<blockquote>
+  <p><a href="https://scholar.google.com/citations?user=wfZF3E0AAAAJ&amp;hl=en">Gaëtan Hadjeres</a>, Feb. 2021.</p>
+
+  <p>Many thanks to <a href="https://scholar.google.com/citations?user=kWScejIAAAAJ&amp;hl=fr">Adrien Laversanne-Finot</a> for his important contributions in this project.</p>
+</blockquote>
 
 
       <footer class="site-footer">
