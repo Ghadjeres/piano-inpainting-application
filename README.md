@@ -45,7 +45,6 @@ Any feedback is more than welcome! From explaining how you worked with PIA, shar
 ### Disclaimer
 This is an alpha version. This is a research project, not an official product. 
 Expect some issues. Please save your important work before experimenting with PIA. No personnal data will be collected.
-This version of the plugin will cease functioning by the 1st of April 2021.
 
 
 > [Gaëtan Hadjeres](https://scholar.google.com/citations?user=wfZF3E0AAAAJ&hl=en), Sony CSL Paris, Feb. 2021.

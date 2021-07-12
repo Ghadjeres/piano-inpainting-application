@@ -16,7 +16,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="The Piano Inpainting Application" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","name":"The Piano Inpainting Application","headline":"The Piano Inpainting Application","description":"An A.I.-enhanced piano performance generation Ableton plugin","@context":"https://schema.org"}</script>
+{"@type":"WebSite","headline":"The Piano Inpainting Application","url":"http://localhost:4000/","description":"An A.I.-enhanced piano performance generation Ableton plugin","name":"The Piano Inpainting Application","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,10 +24,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=8c9b27bca93f39d389c7297b598944322a5ebcfc">
+    <link rel="stylesheet" href="/assets/css/style.css?v=65841522a4524b38c3d928e3bdc487de98678f27">
   </head>
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
       <h1 class="project-name">The Piano Inpainting Application</h1>
@@ -41,16 +40,24 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      <p><!--## The Piano Inpainting Application  --></p>
+      
+<!--## The Piano Inpainting Application  -->
 <div class="youtube-wrapper">
   <iframe src="https://www.youtube.com/embed/HSn2NGAR-ro" allowfullscreen=""></iframe>
 </div>
+
+<p>This is the companion website of the paper <a href="TODO add arXiv link"><em>The Piano Inpainting
+Application</em></a> by Hadjeres and Crestel.</p>
 
 <h3 id="ai-as-creative-music-assistants">A.I. as creative music assistants</h3>
 <p>Composing and editing piano performances using a <a href="https://en.wikipedia.org/wiki/Digital_audio_workstation">Digital Audio Workstation</a> (DAW) can often become a lengthy task as the proper timing, duration and velocity of each note must be set precisely in order to convey the intended emotional effect. If one does not have access to a MIDI keyboard, this task might even become impossible to handle.</p>
 
 <p>In this project, we propose to rely on an Artificial Intelligence to interactively compose piano performances through a constant dialogue with a human user. 
 To this end, we chose to train our A.I. on a single specific task that we called <em>piano inpainting task</em>. Similar to its <a href="https://en.wikipedia.org/wiki/Inpainting">counterpart</a> in image edition, the piano inpainting task consists in restoring a piano performance where some parts have been occluded by filling in the missing parts. After being trained on a large dataset of piano performances, this A.I. is able to generate convincing and always-renewed proposals in a wide variety of styles.</p>
+
+<p align="center">
+<img src="resources/definpainting.png" alt="drawing" width="1000" />
+</p>
 
 <p>With access to such an A.I.-assistant, a user can ask the model to generate any region of a MIDI piano performance with little effort. This comprises connecting two parts together, creating a new piece from scratch or even continuing a first sketch recorded on a MIDI keyboard. The user now acts as an artistic director, validating or invalidating the proposals made by the A.I. We hope that this novel approach to music composition will be entertaining and that it will make piano composition accessible to non-professional musicians.</p>
 
@@ -67,7 +74,7 @@ The Piano Inpainting Application (PIA) comes as a lightweight <a href="https://w
 </p>
 
 <h3 id="how-to-use">How to use</h3>
-<p>You can download PIA using the <a href="https://github.com/Ghadjeres/piano-inpainting-application/releases/download/v0.1-alpha/PIA.amxd">Download .amxd</a> link above and simply drag and drop the <code class="language-plaintext highlighter-rouge">PIA.amxd</code> file within Ableton Live’s  MIDI plugin section.</p>
+<p>You can download PIA using the <a href="https://github.com/qhpzsefhy/pia/raw/master/releases/PIA.amxd">Download .amxd</a> link above and simply drag and drop the <code class="language-plaintext highlighter-rouge">PIA.amxd</code> file within Ableton Live’s  MIDI plugin section.</p>
 
 <p>Select a region in the MIDI track you wish to edit by specifying it using the loop selector (CMD + L) and click on PIA’s <em>Generate</em> button. The <em>density</em> knob controls how many notes per second the inpainted region should have. The last button is used to set the <em>density</em> knob to the actual note density of the selected region.</p>
 
@@ -75,36 +82,99 @@ The Piano Inpainting Application (PIA) comes as a lightweight <a href="https://w
 
 <p>Note that you must be connected to the Internet so that PIA can work.</p>
 
-<h3 id="example">Example</h3>
+<h3 id="examples">Examples</h3>
+<h4 id="live-usage-of-pia">Live usage of PIA</h4>
 <p>In the following video, I show a live recording of an example usage of PIA. Starting from scratch, I successively ask for a continuation of the first proposal, then edit the middle section twice with different note densities before asking for another ending.</p>
 
 <div class="youtube-wrapper">
   <iframe src="https://www.youtube.com/embed/YKCzU8UYsRU" allowfullscreen=""></iframe>
 </div>
 
-<h3 id="what-kind-of-ai-model-is-this">What kind of A.I. model is this?</h3>
-<p>We are currently writing a scientific paper on the model itself. Our main focus was to make the model as responsive as possible while maintaining high generation capabilities. The code and the model will be released.</p>
+<h4 id="interactive-composition-made-easy">Interactive composition made easy</h4>
+<p>The following example was composed using the PIA plugin as in the
+video shown above in under
+3 minutes: Generation of
+a first proposal from scratch, copy and paste of this proposal, asking PIA
+to generate a transition between the two copies and regenerating an
+ending.</p>
 
-<h3 id="how-to-contribute">How to contribute?</h3>
-<p>Any feedback is more than welcome! From explaining how you worked with PIA, sharing your creations to proposing improvement suggestions. Please visit the dedicated <a href="https://github.com/Ghadjeres/piano-inpainting-application/discussions">Github Discussions</a>.</p>
+<p align="center">
+<audio controls=""> <source src="/assets/audio/PIA2.mp3" type="audio/mpeg" /></audio>
+</p>
 
-<h3 id="disclaimer">Disclaimer</h3>
-<p>This is an alpha version. This is a research project, not an official product. 
-Expect some issues. Please save your important work before experimenting with PIA. No personnal data will be collected. This version of the plugin will cease functioning by the 1st of April 2021.</p>
+<h4 id="unconditional-generation">Unconditional Generation</h4>
 
-<blockquote>
-  <p><a href="https://scholar.google.com/citations?user=wfZF3E0AAAAJ&amp;hl=en">Gaëtan Hadjeres</a>, Sony CSL Paris, Feb. 2021.</p>
+<p>The following example was generated from scratch using no constraint
+and no human intervention:</p>
 
-  <p>Many thanks to <a href="https://scholar.google.com/citations?user=kWScejIAAAAJ&amp;hl=fr">Adrien Laversanne-Finot</a> for his important contributions to this project.</p>
-</blockquote>
+<p align="center">
+<audio controls=""> <source src="/assets/audio/wallnotes.mp3" type="audio/mpeg" /></audio>
+</p>
+
+<h4 id="generation-conditioned-on-onsets">Generation conditioned on onsets</h4>
+<p>As described in the paper, PIA can be conditioned only on a sequence
+of note onsets and can regenerate all the remaining missing
+information (pitch, velocity and duration).</p>
+
+<p>The following example shows how an existing piano piece can be
+recomposed by PIA while keeping all notes onsets identical.</p>
+
+<p>The first audio is the original file from which the note onsets are
+extracted and the second one is the PIA-generated version (no human interaction).</p>
+<p align="center">
+<audio controls=""> <source src="/assets/audio/moz.mp3" type="audio/mpeg" /></audio>
+<audio controls=""> <source src="/assets/audio/from_moz.mp3" type="audio/mpeg" /></audio>
+</p>
+<p>We note that PIA is able to develop coherent melodic patterns based on the
+rhythmic patterns from the input, while generating in a modern style.</p>
+
+<hr />
+
+<p>This suggests an intuitive way to condition PIA by inputting the
+onsets using a one-octave MIDI keyboard. Here is for instance  a
+recording I made:</p>
+
+<p align="center">
+<audio controls=""> <source src="/assets/audio/onsets.mp3" type="audio/mpeg" /></audio>
+</p>
+
+<p>We can ask PIA to generate only the pitches while keeping the velocities
+and note durations identical:</p>
+<p align="center">
+<audio controls=""> <source src="/assets/audio/from_onsets_only.mp3" type="audio/mpeg" /></audio>
+</p>
+
+<p>However, since the velocities and durations from the original file are
+a bit harsh, we can ask PIA to also generate velocities and note
+durations:</p>
+<p align="center">
+<audio controls=""> <source src="/assets/audio/from_onsets.mp3" type="audio/mpeg" /></audio>
+</p>
+
+<p>Despite the unusual rhythm from the original piece, PIA manages to
+produce interesting musical ideas (no human intervention).</p>
+
+<h4 id="regenerating-constrained-tokens">Regenerating constrained tokens</h4>
+<p>As described in Sect. 3.3.4, asking PIA to also regenerate constrained
+tokens leads surprisingly to the generation of novel sequences that
+still present similarities with the constrained sequence. The
+following examples showcase two generations (Fig. 4) using this generation
+method: both sequences were obtained by conditioning on the same constraint
+sequence (no human intervention).</p>
+
+<p align="center">
+<audio controls=""> <source src="/assets/audio/absurdgen1.mp3" type="audio/mpeg" /></audio>
+<audio controls=""> <source src="/assets/audio/absurdgen2.mp3" type="audio/mpeg" /></audio>
+</p>
+<hr />
 
 
-      <footer class="site-footer">
-        
-          <span class="site-footer-owner"><a href="https://github.com/Ghadjeres/piano-inpainting-application">piano-inpainting-application</a> is maintained by <a href="https://github.com/Ghadjeres">Ghadjeres</a>.</span>
-        
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
+      <!-- <footer class="site-footer"> -->
+      <!--    -->
+      <!--     <span class="site-footer-owner"><a href="https://github.com/Ghadjeres/piano-inpainting-application">piano-inpainting-application</a> is maintained by <a href="https://github.com/Ghadjeres">Ghadjeres</a>.</span> -->
+      <!--    -->
+      <!--   <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span> -->
+      <!-- </footer> -->
     </main>
   </body>
 </html>
